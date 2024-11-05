@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { z } from 'zod';
+
+const schema = z.object({ hi: z.string() });
 
 @Component({
   selector: 'lib-hello',
@@ -8,4 +11,8 @@ import { CommonModule } from '@angular/common';
   templateUrl: './hello.component.html',
   styleUrl: './hello.component.css',
 })
-export class HelloComponent {}
+export class HelloComponent {
+  constructor() {
+    console.log(schema);
+  }
+}
