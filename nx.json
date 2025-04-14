@@ -76,5 +76,6 @@
     }
   },
   "nxCloudId": "672a83313120e34527cef3ff",
-  "nxCloudUrl": "https://staging.nx.app"
+  "nxCloudUrl": "https://staging.nx.app",
+  "bust": 1
 }
